@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Fitness Survey form</title>
+  <meta charset=utf-8></meta>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <h1 id="title">Fitness Survey Form</h1>
+  <p id="description">Please fill out this form with required information</p> 
+  <form id="survey-form" action="#" method="post">
+<fieldset>
+  <legend>Personal Information</legend>
+<label for="name" id="name-label">Enter your name: <input id="name" type="text" placeholder="Name..." required /></label>
+<label for="email" id="email-label">Enter your email: <input id="email" type="email" placeholder="Email..." required/></label>
+<label for="age" id="number-label">Input your age (years): <input id="number" type="number" name="age" min="18" max="100" placeholder="Age..." required /></label>
+</fieldset>
+<fieldset>
+<legend>What type of workout do you prefer?</legend>
+<label><input type="radio" id="cardio" name="workout" value="cardio"/> Cardio</label>
+<label><input type="radio" id="strength" name="workout" value="strength"/> Strength</label>
+<label><input type="radio" id="flexibility" name="workout" value="strength"/> Flexibility</label>
+<label><input type="radio" id="Balance" name="workout" value="Balance"/> Balance</label>
+<label><input type="radio" id="Other" name="workout" value="Other"/> Other</label>
+</fieldset>
+<fieldset>
+  <legend>Dietary Habits</legend>
+  <label for="dropdown">How many meals do you have per day?</label>
+  <select id="dropdown" name="meals-per-day">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5+</option>
+    </select>
+    <label>Are you currently following a specific diet?</label>
+    <label class=inline><input type="checkbox" id="vegan" name="diet" value="vegan"> Vegan</label>
+<label><input type="checkbox" id="vegetarian" name="diet" value="vegetarian"> Vegetarian
+<label><input type="checkbox" id="paleo" name="diet" value="paleo"> Paleo</label>
+<label> <input type="checkbox" id="keto" name="diet" value="keto"> Keto
+    <label class="separate-checkbox"><input type="checkbox" id="none" name="diet" value="none"> None
+            </label>
+      <label for="dietary-restrictions">Do you have any dietary restrictions?
+        <textarea id="dietary-restrictions" name="dietary-restrictions" rows="4" placeholder="Describe any dietary restrictions you have"></textarea>
+            </label>      
+</fieldset>
+<input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+  </html>
+
+
+
+h1, p {
+  text-align: center ;
+  color: white;
+  margin: 1em auto
+}
+body {
+  width: 100% ;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1637430308606-86576d8fef3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGd5bXxlbnwwfHwwfHx8MA%3D%3D') ;
+color: white ;
+font-family: Tahoma ;
+font-size: 16px;
+background-size: cover ;
+background-repeat: repeat ;
+}
+label {display: block;
+margin: 0.5rem 0}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+textarea {
+    width: 100%; 
+    padding: 4px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+form {
+ margin: 0 auto;
+ max-width: 500px;
+ min-width: 300px ;
+ width: 100% ;
+ position: relative;
+ padding-bottom: 2em
+
+}
+
+fieldset {padding: 1rem 0 ;
+border: 0 ;
+border-bottom: 2px solid #3b3b4f
+}
+fieldset:last-of-type {border-bottom: none ;
+}
+textarea, input[type="text"], input[type="email"], select {
+  width: 100%;
+  padding: 4px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin: 0 8px 0 0;
+}
+.separate-checkbox {
+  margin-bottom: 1rem
+}
+input, textarea, select {background-color: #e0e0e0 ;
+border: 1px solid #0a0a23;
+color: black ;
+min-height: 2em
+}
+select {width: auto}
+input[type="checkbox"], input[type="radio"] {
+  vertical-align: middle; 
+  margin-right: 0.5em; 
+}
+fieldset > label {
+  margin-top: 1em; 
+}
+input[type="submit"] {display: block ; 
+width: 60% ;
+margin: 1em auto ;
+height: 2em ;
+font-size: 1.1rem ;
+color: white ;
+background-color: #001F3F ;
+border-color: #0a0a23 ;
+ min-width: 300px
+}
+input[type="file"] {padding: 1px 2px}
+
+
+
+
+
+
